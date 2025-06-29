@@ -1,0 +1,45 @@
+# Codecademy: Learn Python 2 Progress
+
+This repository documents my progress through Codecademy's "Learn Python 2" course. I'm actively working through the lessons, completing exercises, and building small projects to solidify my understanding of Python 2.
+
+---
+
+## Current Progress
+
+**Status:** 50% Complete
+![Progress: 50%](https://img.shields.io/badge/Progress-50%25-brightgreen)
+
+---
+
+## Completed Sections (as of June 28, 2025)
+
+* [Section 1: Python Syntax](Section_1_Python_Syntax/)
+* [Section 2: Strings and Console Output](Section_2_Strings_and_Console_Output/)
+* [Section 3: Conditionals and Control Flow](Section_3_Conditionals_and_Control_Flow/)
+* [Section 4: Functions](Section_4_Functions/)
+* [Section 5: Lists and Dictionaries](Section_5_Lists_and_Dictionaries/)
+
+---
+
+## Currently Working On
+
+* Functions, Dictionaries and Lists
+
+---
+
+## Projects & Exercises
+
+* 
+* 
+
+---
+
+## Learnings & Notes
+
+* Understood the importance of indentation in Python and how it defines code blocks.
+* Practiced using `if`/`elif`/`else` statements for various decision-making scenarios.
+* Explored different ways to manipulate strings, including concatenation and formatting.
+* Understood creating a list using a dictionary and producing results using functions.
+
+
+
