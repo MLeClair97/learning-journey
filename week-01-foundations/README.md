@@ -8,7 +8,27 @@
 
 ## Daily Progress
 
-### Day 1: [Date]
+### Day 1: 06/29/2025
+**Topics Studied:**
+- Get started in GitHub
+- Get started on Flowise
+- OpenAI API Key setup 
+
+**Key Insights:**
+- GitHub file structure is different than a regular folder system
+- Flowise API Key test taught me a bit about how the chat flows work via troubleshooting.
+
+**Challenges:**
+- My github folder for week one is not organized as I would like but learning!
+- Had trouble getting my OpenAPI Key validated but added notes on the api key test and what I learned
+
+**Tomorrow's Plan:**
+- Work in Flowise some more
+- Spend more time on Python 2 training course that is in progress
+
+---
+
+### Day 2: 06//2025
 **Topics Studied:**
 - 
 
@@ -23,8 +43,6 @@
 
 **Tomorrow's Plan:**
 - 
-
----
 <!-- I'll add more days as I progress -->
 
 ## Week 1 Project: Customer Service Agent
@@ -33,16 +51,16 @@
 Building a basic customer service agent that can handle frequently asked questions.
 
 ### Implementation
-- **Flowise Version**: [I'll add details here]
-- **Python Version**: [I'll recreate this in Week 6]
-
+- **Flowise Version**: [cloud](https://cloud.flowiseai.com/)
+- **Python Version**: N/A
 ### Files
 - `flowise-workflow.json` - Exported Flowise configuration
 - `screenshots/` - Agent workflow images
 - `testing-notes.md` - How I tested the agent
 
 ## Resources Used This Week
-- [Links to tutorials, documentation, etc.]
+- https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources
+- 
 
 ## Reflection
 [I'll add my thoughts on the week's learning at the end]
