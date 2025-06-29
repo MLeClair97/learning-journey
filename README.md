@@ -23,7 +23,12 @@ I'm documenting my 12-week journey learning AI agent development, starting with 
 5. [ ] Data Analysis Agent (Python with tools)
 
 ## Weekly Updates
-<!-- I'll add weekly progress updates here -->
+### Week 1 - Day [1]
+- ✅ Set up OpenAI API key successfully
+- ✅ Solved first Flowise error (missing Chain component)
+- ✅ Created working simple chatbot
+- ✅ Documented troubleshooting process
+- 📁 Added: `week-01-foundations/api-key-test.md`
 
 ## Skills Tracking
 ### Visual Tools
