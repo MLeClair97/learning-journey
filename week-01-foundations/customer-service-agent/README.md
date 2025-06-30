@@ -27,8 +27,8 @@ Built a customer service agent using Flowise that can handle FAQs and maintain c
 - Escalated unknown issues appropriately: ✅
 
 ## Screenshots
-- `workflow-design.png` - Flowise canvas view
-- `conversation-test.png` - Sample conversation
+- `week-01-foundations/customer-service-agent/Workflow Screenshot 2025-06-30.png` - Flowise canvas view
+- `week-01-foundations/customer-service-agent/Chat Sample Screenshot 2025-06-30.png` - Sample conversation
 
 ## Lessons Learned
 - I was trying to update the personality of the chatbot but I coulsn't find the system message on the ChatOpen API node. Then I found that the system message is associated with the conversation chain node, which makes sense now.
@@ -36,6 +36,6 @@ Built a customer service agent using Flowise that can handle FAQs and maintain c
 - Learning the terminology for each node will take some time, but that will come with practice.
 
 ## Files
-- `flowise-export.json` - Exportable workflow
-- `company-faq.txt` - Knowledge base
-- `testing-conversations.md` - Test scenarios and results
+- `week-01-foundations/customer-service-agent/My FAQ Chatbot Chatflow.json` - Exportable workflow
+- `week-01-foundations/customer-service-agent/company-faq.txt` - Knowledge base
+- `week-01-foundations/customer-service-agent/SatFinder_Pro_Satellite_Meter_Quick_Start_Guide.pdf` - PDF Quick Guide for knowledge base
