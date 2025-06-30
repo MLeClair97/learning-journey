@@ -13,10 +13,10 @@ I'm documenting my 12-week journey learning AI agent development, starting with 
 ## Current Progress
 - Start Date: 06/29/2025
 - Current Week: Week 1
-- Projects Completed: 0/5
+- Projects Completed: 1/5
 
 ## Projects Portfolio
-1. [ ] Customer Service Agent (Flowise → Python)
+1. ✅ Customer Service Agent (Flowise → Python)
 2. [ ] Research Assistant (Flowise → LangChain)
 3. [ ] Multi-Agent Content Pipeline (Flowise → CrewAI)
 4. [ ] Knowledge Base RAG System (Python/LangChain)
@@ -29,6 +29,10 @@ I'm documenting my 12-week journey learning AI agent development, starting with 
 - ✅ Created working simple chatbot
 - ✅ Documented troubleshooting process
 - 📁 Added: `week-01-foundations/api-key-test.md`
+### Week 1 - Day [2]
+- ✅ Set up First simple chatbot
+- ✅ Completed first Customer Service Agent bot with data source of txt / PDF file
+- ✅ Continued to section ____ in Learning Python 2 at Codecademy
 
 ## Skills Tracking
 ### Visual Tools
