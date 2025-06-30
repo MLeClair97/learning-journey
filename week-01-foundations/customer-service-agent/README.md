@@ -31,9 +31,9 @@ Built a customer service agent using Flowise that can handle FAQs and maintain c
 - `conversation-test.png` - Sample conversation
 
 ## Lessons Learned
+- I was trying to update the personality of the chatbot but I coulsn't find the system message on the ChatOpen API node. Then I found that the system message is associated with the conversation chain node, which makes sense now.
 - The setup process seems logical and easy to establish once you understand the terminology for the pieces required.
 - Learning the terminology for each node will take some time, but that will come with practice.
-- [Ideas for improvement]
 
 ## Files
 - `flowise-export.json` - Exportable workflow
