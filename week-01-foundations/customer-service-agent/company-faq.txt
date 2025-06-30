@@ -1,0 +1,11 @@
+Q: What are your business hours?
+A: We're open Monday-Friday 9AM-6PM EST.
+
+Q: How do I reset my password?
+A: Click "Forgot Password" on the login page and follow the email instructions.
+
+Q: What's your refund policy?
+A: We offer 30-day money-back guarantee on all products.
+
+Q: How do I contact support?
+A: Email support@company.com or use our live chat feature.
