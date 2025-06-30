@@ -1,0 +1,41 @@
+# Customer Service Agent - Week 1 Project
+
+## Project Overview
+Built a customer service agent using Flowise that can handle FAQs and maintain conversation context.
+
+## Implementation Details
+
+### Components Used
+- ChatOpenAI (gpt-3.5-turbo)
+- Buffer Memory for conversation history
+- Retrieval QA Chain for FAQ lookup
+- Text File loader / PDF file loader for knowledge base 
+
+### Knowledge Base
+- 5 FAQ entries covering common customer service topics in original text file
+- Stored in `company-faq.txt`
+- Product Quick Start Guide PDF for second round knowledge base
+- Added customer service contact information to the Conversational Rectrieval QA Chain for questions not found in document.
+
+### System Prompt
+[Include your system prompt here]
+
+## Testing Results
+- Successfully handled greetings: ✅
+- Answered FAQ questions accurately: ✅
+- Maintained conversation context: ✅
+- Escalated unknown issues appropriately: ✅
+
+## Screenshots
+- `workflow-design.png` - Flowise canvas view
+- `conversation-test.png` - Sample conversation
+
+## Lessons Learned
+- The setup process seems logical and easy to establish once you understand the terminology for the pieces required.
+- Learning the terminology for each node will take some time, but that will come with practice.
+- [Ideas for improvement]
+
+## Files
+- `flowise-export.json` - Exportable workflow
+- `company-faq.txt` - Knowledge base
+- `testing-conversations.md` - Test scenarios and results
