@@ -6,7 +6,7 @@ This repository documents my progress through Codecademy's "Learn Python 2" cour
 
 ## Current Progress
 
-**Status:** 50% Complete
+**Status:** 66% Complete
 ![Progress: 50%](https://img.shields.io/badge/Progress-50%25-brightgreen)
 
 ---
@@ -23,13 +23,13 @@ This repository documents my progress through Codecademy's "Learn Python 2" cour
 
 ## Currently Working On
 
-* Functions, Dictionaries and Lists
+* [Section 6: Loops](Section_6_Loops/)
 
 ---
 
 ## Projects & Exercises
 
-* 
+* Battleship Game -- week-01-foundations/README/Python-battleship-game
 * 
 
 ---
@@ -40,6 +40,7 @@ This repository documents my progress through Codecademy's "Learn Python 2" cour
 * Practiced using `if`/`elif`/`else` statements for various decision-making scenarios.
 * Explored different ways to manipulate strings, including concatenation and formatting.
 * Understood creating a list using a dictionary and producing results using functions.
+* Practicing Loops using while as well as if/elif/else using functions
 
 
 
