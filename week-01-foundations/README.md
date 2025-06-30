@@ -28,8 +28,9 @@
 
 ---
 
-### Day 2: 06//2025
+### Day 2: 06/30/2025
 **Topics Studied:**
+- Flowise Chatflow - My first chatbot!
 - 
 
 **Time Spent:**
@@ -39,7 +40,7 @@
 - 
 
 **Challenges:**
-- 
+- I was trying to update the personality of the chatbot but I coulsn't find the system message on the ChatOpen API node.  Then I found that the system message is associated with the conversation chain node, which makes sense now.
 
 **Tomorrow's Plan:**
 - 
