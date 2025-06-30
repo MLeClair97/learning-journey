@@ -30,14 +30,15 @@
 
 ### Day 2: 06/30/2025
 **Topics Studied:**
-- Flowise Chatflow - My first chatbot!
-- 
+- Flowise Chatflow - Built My first chatbot! Then updated it to handle questions based on a FAQ txt file.
+- Workflow: [FAQ Document] → [Text Splitter] → [Vector Store] → [User Input] → [Retrieval QA Chain] ← [ChatOpenAI with System Prompt] → [Response] ← [Memory Buffer]
+- Ran some questions by the basic txt data.  Then added a PDF file text splitter, replaced the txt connection with this and tested.  Success!
 
 **Time Spent:**
 - 
 
 **Key Insights:**
-- 
+- Switching between txt and pdf was very intuitive.  I am interested to find out how to link multiple data sources to my next version chatbot.
 
 **Challenges:**
 - I was trying to update the personality of the chatbot but I coulsn't find the system message on the ChatOpen API node.  Then I found that the system message is associated with the conversation chain node, which makes sense now.
