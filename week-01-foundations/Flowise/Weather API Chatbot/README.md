@@ -24,12 +24,11 @@ Built a weather chatbot using Flowise, connecting via an API to openweathermap.o
 - Received lat and lon for Austin when requested to check other data: ✅
 
 ## Screenshots
-- `` - Flowise canvas view
-- `` - Sample conversation
+- `week-01-foundations/Flowise/Weather API Chatbot/Workflow Weather Screenshot 2025-07-01.png` - Flowise canvas view & Sample conversation
 
 ## Lessons Learned
 - Parameter Configuration: Must define all input parameters in Flowise tools - I missed this step initially
 - It appeared on openweathermap.org that the request would require a lat and lon for a city so I added extra steps for geocoding API that were unneccessary.
 
 ## Files
-- `week-01-foundations/customer-service-agent/My FAQ Chatbot Chatflow.json` - Exportable workflow
+- `week-01-foundations/Flowise/Weather API Chatbot/Weather Chatbot Chatflow.json` - Exportable workflow
