@@ -13,26 +13,34 @@ I'm documenting my 12-week journey learning AI agent development, starting with 
 ## Current Progress
 - Start Date: 06/29/2025
 - Current Week: Week 1
-- Projects Completed: 1/5
+- Projects Completed: 2
 
 ## Projects Portfolio
 1. ✅ Customer Service Agent (Flowise → Python)
-2. [ ] Research Assistant (Flowise → LangChain)
-3. [ ] Multi-Agent Content Pipeline (Flowise → CrewAI)
-4. [ ] Knowledge Base RAG System (Python/LangChain)
-5. [ ] Data Analysis Agent (Python with tools)
+2. ✅ Weather Chatbot (Flowise → API -> Java)
+3. [ ] Research Assistant (Flowise → LangChain)
+4. [ ] Multi-Agent Content Pipeline (Flowise → CrewAI)
+5. [ ] Knowledge Base RAG System (Python/LangChain)
+6. [ ] Data Analysis Agent (Python with tools)
 
 ## Weekly Updates
+### Week 1 - Day [3]
+- ✅ Set up API weather chatbot
+- ✅ Completed first Customer Service Agent bot with data source of txt / PDF file
+- ✅ Completed _____ in Learning Python 2 at Codecademy
+
+### Week 1 - Day [2]
+- ✅ Set up First simple chatbot
+- ✅ Completed first Customer Service Agent bot with data source of txt / PDF file
+- ✅ Added week-01-foundations/customer-service-agent folder
+- ✅ Continued to 50% of While and For Loops in Learning Python 2 at Codecademy
+
 ### Week 1 - Day [1]
 - ✅ Set up OpenAI API key successfully
 - ✅ Solved first Flowise error (missing Chain component)
 - ✅ Created working simple chatbot
 - ✅ Documented troubleshooting process
 - 📁 Added: `week-01-foundations/api-key-test.md`
-### Week 1 - Day [2]
-- ✅ Set up First simple chatbot
-- ✅ Completed first Customer Service Agent bot with data source of txt / PDF file
-- ✅ Continued to section ____ in Learning Python 2 at Codecademy
 
 ## Skills Tracking
 ### Visual Tools
