@@ -17,8 +17,6 @@ Built a customer service agent using Flowise that can handle FAQs and maintain c
 - Product Quick Start Guide PDF for second round knowledge base
 - Added customer service contact information to the Conversational Rectrieval QA Chain for questions not found in document.
 
-### System Prompt
-[Include your system prompt here]
 
 ## Testing Results
 - Successfully handled greetings: ✅
