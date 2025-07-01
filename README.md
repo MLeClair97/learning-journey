@@ -24,10 +24,12 @@ I'm documenting my 12-week journey learning AI agent development, starting with 
 6. [ ] Data Analysis Agent (Python with tools)
 
 ## Weekly Updates
-### Week 1 - Day [3]
-- ✅ Set up API weather chatbot
-- ✅ Completed first Customer Service Agent bot with data source of txt / PDF file
-- ✅ Completed _____ in Learning Python 2 at Codecademy
+### Week 1 - Day [1]
+- ✅ Set up OpenAI API key successfully
+- ✅ Solved first Flowise error (missing Chain component)
+- ✅ Created working simple chatbot
+- ✅ Documented troubleshooting process
+- 📁 Added: `week-01-foundations/api-key-test.md`
 
 ### Week 1 - Day [2]
 - ✅ Set up First simple chatbot
@@ -35,12 +37,10 @@ I'm documenting my 12-week journey learning AI agent development, starting with 
 - ✅ Added week-01-foundations/customer-service-agent folder
 - ✅ Continued to 50% of While and For Loops in Learning Python 2 at Codecademy
 
-### Week 1 - Day [1]
-- ✅ Set up OpenAI API key successfully
-- ✅ Solved first Flowise error (missing Chain component)
-- ✅ Created working simple chatbot
-- ✅ Documented troubleshooting process
-- 📁 Added: `week-01-foundations/api-key-test.md`
+### Week 1 - Day [3]
+- ✅ Set up API weather chatbot
+- ✅ Completed first Customer Service Agent bot with data source of txt / PDF file
+- ✅ Completed _____ in Learning Python 2 at Codecademy
 
 ## Skills Tracking
 ### Visual Tools
