@@ -8,6 +8,31 @@
 
 ## Daily Progress
 
+### Day 3: 07/01/2025
+**Topics Studied:**
+- Flowise API Chatflow - Built weather chatbot with API request to https://openweathermap.org/
+- Workflow: [ChatOpenAI with System Prompt] → [Conversation Agent] → [Custom Tool API call] → [Response] ← [Memory Buffer] 
+  
+**Key Insights:**
+- API was more challenging, needed claude.ai to assist with Javascript for the custom tool.
+
+**Challenges:**
+- When I tried to save the first flow, I hit the maximum number of chatflows allowed in Flowise instance so I had to remove my Key test flow to make room.
+- Missed setting up the parameter in the custom tool on the first round so no answers in the responses
+- Once the tool was being called, it was returning "I have requested the current weather information for Austin" without actual data.  I was making the API call too complex based on what I had read at openweathermap.org. Simplifying the API call cleared up this issue.
+
+### Day 2: 06/30/2025
+**Topics Studied:**
+- Flowise Chatflow - Built My first chatbot! Then updated it to handle questions based on a FAQ txt file.
+- Workflow: [FAQ Document] → [Text Splitter] → [Vector Store] → [User Input] → [Retrieval QA Chain] ← [ChatOpenAI with System Prompt] → [Response] ← [Memory Buffer]
+- Ran some questions by the basic txt data.  Then added a PDF file text splitter, replaced the txt connection with this and tested.  Success!
+
+**Key Insights:**
+- Switching between txt and pdf was very intuitive.  I am interested to find out how to link multiple data sources to my next version chatbot.
+
+**Challenges:**
+- I was trying to update the personality of the chatbot but I coulsn't find the system message on the ChatOpen API node.  Then I found that the system message is associated with the conversation chain node, which makes sense now.
+
 ### Day 1: 06/29/2025
 **Topics Studied:**
 - Get started in GitHub
@@ -27,35 +52,6 @@
 - Spend more time on Python 2 training course that is in progress
 
 ---
-
-### Day 2: 06/30/2025
-**Topics Studied:**
-- Flowise Chatflow - Built My first chatbot! Then updated it to handle questions based on a FAQ txt file.
-- Workflow: [FAQ Document] → [Text Splitter] → [Vector Store] → [User Input] → [Retrieval QA Chain] ← [ChatOpenAI with System Prompt] → [Response] ← [Memory Buffer]
-- Ran some questions by the basic txt data.  Then added a PDF file text splitter, replaced the txt connection with this and tested.  Success!
-
-**Key Insights:**
-- Switching between txt and pdf was very intuitive.  I am interested to find out how to link multiple data sources to my next version chatbot.
-
-**Challenges:**
-- I was trying to update the personality of the chatbot but I coulsn't find the system message on the ChatOpen API node.  Then I found that the system message is associated with the conversation chain node, which makes sense now.
-
-### Day 3: 07/01/2025
-**Topics Studied:**
-- Flowise API Chatflow - Built weather chatbot with API request to https://openweathermap.org/
-- Workflow: [ChatOpenAI with System Prompt] → [Conversation Agent] → [Custom Tool API call] → [Response] ← [Memory Buffer] 
-  
-**Key Insights:**
-- API was more challenging, needed claude.ai to assist with Javascript for the custom tool.
-
-**Challenges:**
-- When I tried to save the first flow, I hit the maximum number of chatflows allowed in Flowise instance so I had to remove my Key test flow to make room.
-- Missed setting up the parameter in the custom tool on the first round so no answers in the responses
-- Once the tool was being called, it was returning "I have requested the current weather information for Austin" without actual data.  I was making the API call too complex based on what I had read at openweathermap.org. Simplifying the API call cleared up this issue.
-
-
-<!-- I'll add more days as I progress -->
-
 ## Week 1 Project: Customer Service Agent
 
 ### Project Description
