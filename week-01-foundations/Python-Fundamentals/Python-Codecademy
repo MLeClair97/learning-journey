@@ -1,6 +1,9 @@
 # Codecademy: Learn Python 2 Progress
 
-This repository documents my progress through Codecademy's "Learn Python 2" course. I'm actively working through the lessons, completing exercises, and building small projects to solidify my understanding of Python 2.
+This repository documents my progress through Codecademy's "Learn Python 2" course. 
+I completed all the lessons, and associated exercises, including a few small projects to solidify my understanding of Python 2.
+Start date: June 28, 2025
+Complete date: July 03, 2025
 
 ---
 
@@ -19,17 +22,28 @@ This repository documents my progress through Codecademy's "Learn Python 2" cour
 * [Section 4: Functions](Section_4_Functions/)
 * [Section 5: Lists and Dictionaries](Section_5_Lists_and_Dictionaries/)
 * [Section 6: Loops](Section_6_Loops/)
-* [Section 7: Exam Statistics]
+* [Section 7: Calculating Statistics]
 * [Section 8: Advanced Topics in Python]
 * [Section 9: Introduction to Classes]
 * [Section 10: File Input and Output]
+
+## Learning Objectives Achieved
+
+ -- Master Python syntax and fundamentals
+ -- Understand data types and variables
+ -- Work with lists, dictionaries, and tuples
+ -- Implement control flow (if/else, loops)
+ -- Create and use functions
+ -- Handle file I/O operations
+ -- Apply object-oriented programming concepts
+ -- Debug and troubleshoot Python code
 
 ---
 
 ## Projects & Exercises
 
 * Battleship Game -- week-01-foundations/README/Python-battleship-game
-* 
+* MadLibs Game
 
 ---
 
@@ -40,6 +54,10 @@ This repository documents my progress through Codecademy's "Learn Python 2" cour
 * Explored different ways to manipulate strings, including concatenation and formatting.
 * Understood creating a list using a dictionary and producing results using functions.
 * Practicing Loops using while as well as if/elif/else using functions
+* the section about Bitwise Operators in Advanced Topics was difficult, I hope this is not requirement for use very often.
+* Explored classes, understanding parent and child inheritance, as well as modifying variables methods.
+* Practiced writing to a txt file and reading it back.
+* Learned how to check if the file is closed using "if not file.closed: file.close()"
 
 
 
