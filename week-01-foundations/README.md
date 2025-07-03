@@ -5,8 +5,14 @@
 - Set up and learn Flowise basics
 - Build first customer service agent
 - Document learning process
+- Concurrently continue Codecademy Learning Python 2 for programming foundation
 
 ## Daily Progress
+
+### Day 4: 07/03/2025
+**Topics Studied:**
+- Completed Codecademy Learn Python 2 course
+- Explore pre-built templates in Flowise
 
 ### Day 3: 07/01/2025
 **Topics Studied:**
