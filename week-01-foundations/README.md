@@ -14,10 +14,10 @@
 - Completed Codecademy Learn Python 2 course
 - Built a basic Web Content Q&A bot with a web scraper node on Flowise
 
-** Key Insights **
+**Key Insights**
 - Embeddings for the Web Content Q&A chat bot take a lot more tokens than a simple chat bot.  I used 33.035M input tokens today vs 53K for all other chat projects.
   
-** Challenges: **
+**Challenges:**
 - The first site I chose (williams-sonoma.com) did not work.  I changed the URL and had a successful response.
 - When trying to move to more than one site for responses, the bot took a long time and did not answer.  I went back to one site and then got a message that I had maxed out my OpenAI request for today.  Stopping at one website Q&A for today, and will revisit the multi-site option another time.
   
