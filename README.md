@@ -40,7 +40,9 @@ I'm documenting my 12-week journey learning AI agent development, starting with 
 ### Week 1 - Day [3]
 - ✅ Set up API weather chatbot
 - ✅ Completed first Customer Service Agent bot with data source of txt / PDF file
-- ✅ Completed _____ in Learning Python 2 at Codecademy
+
+### Week 1 - Day [4]
+- ✅ Completed Learning Python 2 at Codecademy
 
 ## Skills Tracking
 ### Visual Tools
@@ -60,4 +62,4 @@ I'm documenting my 12-week journey learning AI agent development, starting with 
 - [Blog Posts](#) (Links to published articles)
 
 ---
-*Last Updated: 06/29/2025*
+*Last Updated: 07/03/2025*
