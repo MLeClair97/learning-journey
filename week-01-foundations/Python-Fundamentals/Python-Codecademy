@@ -6,24 +6,23 @@ This repository documents my progress through Codecademy's "Learn Python 2" cour
 
 ## Current Progress
 
-**Status:** 66% Complete
-![Progress: 50%](https://img.shields.io/badge/Progress-50%25-brightgreen)
+**Status:** 100% Complete
+![Progress: 100%](https://img.shields.io/badge/Progress-100%25-brightgreen)
 
 ---
 
-## Completed Sections (as of June 28, 2025)
+## Completed Sections (as of July 3, 2025)
 
 * [Section 1: Python Syntax](Section_1_Python_Syntax/)
 * [Section 2: Strings and Console Output](Section_2_Strings_and_Console_Output/)
 * [Section 3: Conditionals and Control Flow](Section_3_Conditionals_and_Control_Flow/)
 * [Section 4: Functions](Section_4_Functions/)
 * [Section 5: Lists and Dictionaries](Section_5_Lists_and_Dictionaries/)
-
----
-
-## Currently Working On
-
 * [Section 6: Loops](Section_6_Loops/)
+* [Section 7: Exam Statistics]
+* [Section 8: Advanced Topics in Python]
+* [Section 9: Introduction to Classes]
+* [Section 10: File Input and Output]
 
 ---
 
