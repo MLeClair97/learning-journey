@@ -12,11 +12,14 @@
 ### Day 5: 07/05/2025
 **Topics Studied**
 - Reviewed Flowise chatbots built this week to understand the differences between their fuctionality
+- Attempted my first Agentflow with a basic math function.  
 
 **Key Insigths**
 - I now understand, on a high level, embeddings and vector data vs API calls, where the work is being done in each of these, and how that affects the token use.
 - I also understand promt engineering best practices.  I have done many promts and refined them as I went along, in an interative process.  The results are much more helpful after fine tuning the prompt.
 - A full summary of what I learned is in noted in week-01-foundations/Flowise/ai_flowise_summary_notes_from_week1.md
+- Lots to learn on the Flowies Agentflow side.  I did some loops trying to figure out how to get a tool set up after the agent in the flow - which led to lots of issues.  Then I realized that the agent could call the chatflows as a tool in the agent node, so I simplified my agent and just called a chatflow math tool that I built.
+- Notes on Agents vs Chatflows:
 
 ### Day 4: 07/03/2025
 **Topics Studied:**
