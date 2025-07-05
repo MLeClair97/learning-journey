@@ -9,6 +9,14 @@
 
 ## Daily Progress
 
+### Day 5: 07/05/2025
+**Topics Studied**
+- Reviewed Flowise chatbots built this week to understand the differences between their fuctionality
+
+**Key Insigths**
+- I now understand, on a high level, embeddings and vector data vs API calls, where the work is being done in each of these, and how that affects the token use.
+- A full summary of what I learned is in noted in ai_flowise_summary_notes_from_week1.md
+
 ### Day 4: 07/03/2025
 **Topics Studied:**
 - Completed Codecademy Learn Python 2 course
