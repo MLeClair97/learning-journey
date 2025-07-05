@@ -15,7 +15,7 @@
 
 **Key Insigths**
 - I now understand, on a high level, embeddings and vector data vs API calls, where the work is being done in each of these, and how that affects the token use.
-- A full summary of what I learned is in noted in ai_flowise_summary_notes_from_week1.md
+- A full summary of what I learned is in noted in week-01-foundations/Flowise/ai_flowise_summary_notes_from_week1.md
 
 ### Day 4: 07/03/2025
 **Topics Studied:**
