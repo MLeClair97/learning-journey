@@ -15,6 +15,7 @@
 
 **Key Insigths**
 - I now understand, on a high level, embeddings and vector data vs API calls, where the work is being done in each of these, and how that affects the token use.
+- I also understand promt engineering best practices.  I have done many promts and refined them as I went along, in an interative process.  The results are much more helpful after fine tuning the prompt.
 - A full summary of what I learned is in noted in week-01-foundations/Flowise/ai_flowise_summary_notes_from_week1.md
 
 ### Day 4: 07/03/2025
