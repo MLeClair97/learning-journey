@@ -25,17 +25,23 @@ I'm documenting my 12-week journey learning AI agent development, starting with 
 
 ## Weekly Updates
 
+### Week 1 - Day [5]
+- ✅ Created first Agent in Flowise utilizing a math tool chatflow based on a template in marketplace
+- 📁 Added: week-01-foundations/Flowise/Basic Math Agentflow folder
+  
 ### Week 1 - Day [4]
 - ✅ Completed Learning Python 2 at Codecademy
+- 📁 Updated Python-Fundamentals folder
 
 ### Week 1 - Day [3]
 - ✅ Set up API weather chatbot
 - ✅ Completed first Customer Service Agent bot with data source of txt / PDF file
+- 📁 Added week-01-foundations/Flowise/Weather API Chatbot folder
 
 ### Week 1 - Day [2]
 - ✅ Set up First simple chatbot
 - ✅ Completed first Customer Service Agent bot with data source of txt / PDF file
-- ✅ Added week-01-foundations/customer-service-agent folder
+- 📁 Added week-01-foundations/customer-service-agent folder
 - ✅ Continued to 50% of While and For Loops in Learning Python 2 at Codecademy
 
 ### Week 1 - Day [1]
@@ -47,12 +53,12 @@ I'm documenting my 12-week journey learning AI agent development, starting with 
 
 ## Skills Tracking
 ### Visual Tools
-- [ ] Flowise basics
+- ✅ Flowise basics
 - [ ] Workflow design
 - [ ] Agent orchestration
 
 ### Programming
-- [ ] Python fundamentals
+- ✅ Python fundamentals
 - [ ] LangChain framework
 - [ ] API integration
 - [ ] Multi-agent systems
@@ -63,4 +69,4 @@ I'm documenting my 12-week journey learning AI agent development, starting with 
 - [Blog Posts](#) (Links to published articles)
 
 ---
-*Last Updated: 07/03/2025*
+*Last Updated: 07/05/2025*
