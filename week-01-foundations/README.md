@@ -115,4 +115,6 @@ Building a basic customer service agent that can handle frequently asked questio
 - https://claude.ai/chat/troubleshootingAPI
 
 ## Reflection
-[I'll add my thoughts on the week's learning at the end]
+This was a productive week.  I made it through the full free version of Learn Python 2 at Codecademy as well as getting a solid start in Flowise.  The process of setting up the chatbots and then attempting an agent really helped me to start understanding some key points about AI.  I understand, on a simple level, how the data is stored and searched, as well as some basic tools that help utilize information to respond to input from a user.  I am excited to continue this journey!
+
+_Last updated 07/06/2025_
