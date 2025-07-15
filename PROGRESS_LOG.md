@@ -24,6 +24,13 @@
   - *Completed*: July 15, 2025
   - *Environment Setup*: Visual Studio Code with Python extension installed
   - *Notes*: Solid foundation refresher, ready for data manipulation focus
+- **Day 3**: Pandas Data Loading & Exploration
+  - Added notes from this here: week-02-foundations/Python-Pandas-Data-Loading.md
+  - ### 📊 Dataset Details used today
+    - **Source**: Kaggle sales dataset
+    - **Tool**: Visual Studio Code
+    - **Format**: CSV file
+    - **Key Learning**: Successfully identified data types, missing values, and basic statistics
 
 #### In Progress 🔄
 - **Day 4**: Master Pandas for Data Manipulation - SQL to Python Translation
