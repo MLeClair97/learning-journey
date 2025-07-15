@@ -58,8 +58,9 @@
 **Focus**: Python for Programmers (Codecademy)
 - ✅ **Completed**: Full Codecademy Python for Programmers course
 - ✅ **Environment**: VS Code + Python extension setup
-- **Key Takeaways**: [Add your specific learnings]
-- **Time Invested**: [Add hours spent]
+- ✅ **Progress**: Began panda exploration + data sources
+- **Key Takeaways**: Python will be ongoing practice but going from Python 2 to Python 3 was managable. Initial data activity with panda and csv worked well.
+- **Time Invested**: 4 hours
 - **Next Steps**: Moving to Pandas/SQL translation work
 
 ### July 16, 2025 - Day 4 Start
