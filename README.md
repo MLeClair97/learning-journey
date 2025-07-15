@@ -15,7 +15,7 @@
 
 ### Phase 1: Python Foundation & Data Manipulation (Days 1-14)
 - ✅ **Day 1-2**: Complete Codecademy 'Python for Programmers' (*Completed July 15, 2025*)
-- ✅ **Day 3**: Environment Setup**: Visual Studio Code with Python extension
+- ✅ **Day 3**: Environment Setup: Visual Studio Code with Python extension
 - 🔄 **Day 4**: Master Pandas for Data Manipulation - SQL to Python Translation (*Starting July 16, 2025*)
 
 ### Upcoming Phases
