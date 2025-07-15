@@ -132,9 +132,7 @@ I'm documenting my 12-week journey learning AI agent development, starting with 
 
 ## Weekly Updates
 
-### Week 2 - Day [1]
-- ✅ Practicing some projects / quizes on Python 2 at Codecademy to keep improving skills
-- 
+
 ### Week 1 - Day [5]
 - ✅ Created first Agent in Flowise utilizing a math tool chatflow based on a template in marketplace
 - 📁 Added: week-01-foundations/Flowise/Basic Math Agentflow folder
