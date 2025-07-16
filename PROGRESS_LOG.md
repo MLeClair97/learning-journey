@@ -20,22 +20,24 @@
 **Timeline**: Days 1-14
 
 #### Completed ✅
-- **Day 1-2**: Complete Codecademy 'Python for Programmers' 
-  - *Completed*: July 15, 2025
-  - *Environment Setup*: Visual Studio Code with Python extension installed
-  - *Notes*: Solid foundation refresher, ready for data manipulation focus
+- ** Day 4**: Pandas Census Data Filtering Practice
+    - Added notes from this here: week-02-foundations/Pandas-day4-practice/Pandas-Data-Filtering-Practice.md
+    - ### 📊 Dataset Details used today
+      - **Source**: US Census Data (www2.census.gov)
+      - **Tool**: Visual Studio Code
+      - **Format**: CSV file
+      - **Key Learning**: Successfully completed basic SELECT statements, WHERE clause filtering, and basic error handling.
 - **Day 3**: Pandas Data Loading & Exploration
-  - Added notes from this here: week-02-foundations/Python-Pandas-Data-Loading.md
+  - Added notes from this here: week-02-foundations/Pandas-day3-practice/Python-Pandas-Data-Loading.md
   - ### 📊 Dataset Details used today
     - **Source**: Kaggle sales dataset
     - **Tool**: Visual Studio Code
     - **Format**: CSV file
     - **Key Learning**: Successfully identified data types, missing values, and basic statistics
-
-#### In Progress 🔄
-- **Day 4**: Master Pandas for Data Manipulation - SQL to Python Translation
-  - *Status*: Starting July 16, 2025
-  - *Focus*: SQL concepts → Pandas equivalents
+- **Day 1-2**: Complete Codecademy 'Python for Programmers' 
+  - *Completed*: July 15, 2025
+  - *Environment Setup*: Visual Studio Code with Python extension installed
+  - *Notes*: Solid foundation refresher, ready for data manipulation focus
 
 #### Upcoming 📅
 - **Day 4-7**: Master pandas for data manipulation
@@ -53,24 +55,29 @@
 ---
 
 ## 📊 Daily Learning Log
+### July 16, 2025 - Day 4 Progress
+**Focus**: Python for Programmers (Codecademy)
+- 🔄 **In Progress**: Panda Data Filtering Practice for SQL to Python translation exercises
+- ✅ **Environment**: VS Code + Python extension setup
+- ✅ **Progress**: SELECT statements, WHERE clause filtering
+- **Key Takeaways**: Use .to_string(index=False) for clean console output, Always wrap conditions in parentheses when using & or | in pandas filters, Error handling: Check for and handle invalid or non-numeric values using pd.to_numeric(..., errors='coerce')
+- **Next Steps**: Pandas Additional Filtering, Sorting, Grouping and Aggregation
 
-### July 15, 2025 - Day 1-2 Completion
+### July 15, 2025 - Day 3 Start
+**Focus**: Master Pandas for Data Manipulation
+- 🔄 **In Progress**: SQL to Python translation exercises
+- ✅ **Environment**: VS Code + Python extension setup
+- ✅ **Progress**: Learned pandas data loading and basic exploration using real-world data from Kaggle
+- **Challenges**: Adjusting to pandas syntax vs SQL queries
+- **Breakthroughs**: Understanding DataFrames as "smart spreadsheets"
+
+### July 14, 2025 - Day 1-2 Completion
 **Focus**: Python for Programmers (Codecademy)
 - ✅ **Completed**: Full Codecademy Python for Programmers course
 - ✅ **Environment**: VS Code + Python extension setup
 - ✅ **Progress**: Began panda exploration + data sources
 - **Key Takeaways**: Python will be ongoing practice but going from Python 2 to Python 3 was managable. Initial data activity with panda and csv worked well.
-- **Time Invested**: 4 hours
 - **Next Steps**: Moving to Pandas/SQL translation work
-
-### July 16, 2025 - Day 4 Start
-**Focus**: Master Pandas for Data Manipulation
-- 🔄 **In Progress**: SQL to Python translation exercises
-- **Resources Used**: [Add specific tutorials, docs, or materials]
-- **Key Concepts**: [Add what you're learning]
-- **Challenges**: [Add any difficulties encountered]
-- **Breakthroughs**: [Add any "aha" moments]
-
 ---
 
 ## 🔄 Weekly Reflections
@@ -98,7 +105,7 @@
 | SQL | Intermediate | Intermediate | Advanced | Translating knowledge to Python |
 
 ### Milestone Tracker
-- [ ] **Week 1**: Python foundation complete
+- ✅ **Week 1**: Python foundation complete
 - [ ] **Week 2**: Pandas basics mastered
 - [ ] **Week 3**: Data manipulation proficiency
 - [ ] **Week 4**: SQL-to-Python translation fluency
