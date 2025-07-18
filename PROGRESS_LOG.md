@@ -19,7 +19,14 @@
 **Timeline**: Days 1-14
 
 #### Completed ✅
-- **Day 4**: Pandas Census Data Filtering Practice
+- **Day 5**: Pandas Sorting, Grouping and Aggregation
+    - Added Jupyter notebook from this here: week-02-foundations/Pandas-day5-practice/Day5_Sort_Filter_Group_Agg.ipynb
+    - ### 📊 Dataset Details used today
+      - **Source**: Sales Data from Kraggle
+      - **Tool**: Visual Studio Code / Jupyter Extension
+      - **Format**: CSV file
+      - **Key Learning**: Went from basic grouping and filtering to more complex conditional logic, including Multi-Function Aggregation. Understand how to replicate SQL HAVING, multi-Level grouping, and some basic aggregation.
+   - **Day 4**: Pandas Census Data Filtering Practice
     - Added notes from this here: week-02-foundations/Pandas-day4-practice/Pandas-Data-Filtering-Practice.md
     - ### 📊 Dataset Details used today
       - **Source**: US Census Data (www2.census.gov)
@@ -39,7 +46,7 @@
   - *Notes*: Solid foundation refresher, ready for data manipulation focus
 
 #### Upcoming 📅
-- **Day 5-7**: Master pandas for data manipulation
+- **Day 6-7**: Master pandas for data manipulation
 - **Day 8-10**: Database connections with Python
 - **Day 11-14**: API calls and JSON handling
 - **Day 15-17**: Master AI tools interactively
@@ -54,6 +61,13 @@
 ---
 
 ## 📊 Daily Learning Log
+### July 17, 2025 - Day 4 Progress
+**Focus**: Master Pandas for Data Manipulation
+- 🔄 **In Progress**: Panda Data Sorting, Grouping and Aggregation Practice for SQL to Python translation exercises
+- ✅ **Environment**: VS Code + Jupyter Notebook + Python
+- ✅ **Progress**: SELECT statements, WHERE clause filtering
+- **Key Takeaways**:  Use raw strings (prefix with r) when calling my files, I need to sort_values(...) separately first before selecting fields and presenting the results.
+
 ### July 16, 2025 - Day 4 Progress
 **Focus**: Master Pandas for Data Manipulation
 - 🔄 **In Progress**: Panda Data Filtering Practice for SQL to Python translation exercises
