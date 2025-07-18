@@ -19,6 +19,13 @@
 **Timeline**: Days 1-14
 
 #### Completed ✅
+- **Day 6**: Pandas Merging and Joining Data
+    - Added Jupyter notebook from this here: week-02-foundations/Pandas-day6-practice/Day6_Merging_and_Joining_Data.ipynb
+    - ### 📊 Dataset Details used today
+      - **Source**: Tips database from Seaborn
+      - **Tool**: Visual Studio Code / Jupyter Extension
+      - **Format**: created dataframe in project & then sns databse
+      - **Key Learning**: Types of Joins, Primary Methods: `merge()` = like SQL joins; `join()` = index based; `concat()` = like SQL UNION
 - **Day 5**: Pandas Sorting, Grouping and Aggregation
     - Added Jupyter notebook from this here: week-02-foundations/Pandas-day5-practice/Day5_Sort_Filter_Group_Agg.ipynb
     - ### 📊 Dataset Details used today
@@ -26,13 +33,15 @@
       - **Tool**: Visual Studio Code / Jupyter Extension
       - **Format**: CSV file
       - **Key Learning**: Went from basic grouping and filtering to more complex conditional logic, including Multi-Function Aggregation. Understand how to replicate SQL HAVING, multi-Level grouping, and some basic aggregation.
-   - **Day 4**: Pandas Census Data Filtering Practice
+        
+- **Day 4**: Pandas Census Data Filtering Practice
     - Added notes from this here: week-02-foundations/Pandas-day4-practice/Pandas-Data-Filtering-Practice.md
     - ### 📊 Dataset Details used today
       - **Source**: US Census Data (www2.census.gov)
       - **Tool**: Visual Studio Code
       - **Format**: CSV file
-      - **Key Learning**: Successfully completed basic SELECT statements, WHERE clause filtering, and basic error handling.
+      - **Key Learning**: Successfully completed basic SELECT statements, WHERE clause filtering, and basic error handling. Use `query` for complex conditions:
+df.query('amount > 1000 and region == "North"'), Use `isin()` for multiple values: df[df['status'].isin(['Active', 'Pending'])]
 - **Day 3**: Pandas Data Loading & Exploration
   - Added notes from this here: week-02-foundations/Pandas-day3-practice/Python-Pandas-Data-Loading.md
   - ### 📊 Dataset Details used today
@@ -41,12 +50,11 @@
     - **Format**: CSV file
     - **Key Learning**: Successfully identified data types, missing values, and basic statistics
 - **Day 1-2**: Complete Codecademy 'Python for Programmers' 
-  - *Completed*: July 15, 2025
   - *Environment Setup*: Visual Studio Code with Python extension installed
   - *Notes*: Solid foundation refresher, ready for data manipulation focus
 
 #### Upcoming 📅
-- **Day 6-7**: Master pandas for data manipulation
+- **Day 7**: Wrap up pandas for data manipulation
 - **Day 8-10**: Database connections with Python
 - **Day 11-14**: API calls and JSON handling
 - **Day 15-17**: Master AI tools interactively
@@ -61,7 +69,14 @@
 ---
 
 ## 📊 Daily Learning Log
-### July 17, 2025 - Day 4 Progress
+### July 18, 2025 - Day 6 Progress
+**Focus**: Master Pandas for Data Manipulation
+- 🔄 **In Progress**: Panda Data Merging and Joining Data Practice for SQL to Python translation exercises
+- ✅ **Environment**: VS Code + Jupyter Notebook + Python
+- ✅ **Progress**: SELECT statements, WHERE clause filtering
+- **Key Takeaways**: Merge, on, how is logical like joins in SQL. Suffixes are new as SQL can handle column names that are the same using table aliases. Concat with `.drop_duplicates()` functions like UNION, UNION ALL without that. Prefer to use `np.where()` rather than `pd.cut()` - it seems more logical and readable. By chance, learned \n next line formatting character to create a new line to space return data out. Also, using `observed=True` learned by a code update warning by Jupyter on one of my statements.
+- 
+### July 17, 2025 - Day 5 Progress
 **Focus**: Master Pandas for Data Manipulation
 - 🔄 **In Progress**: Panda Data Sorting, Grouping and Aggregation Practice for SQL to Python translation exercises
 - ✅ **Environment**: VS Code + Jupyter Notebook + Python
