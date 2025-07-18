@@ -2,7 +2,7 @@
 
 ## 🎯 Current Focus: AI Implementation Specialist Training
 
-**Updated July 15, 2025** - Pivoted from AI Agent Development to a more structured career transition approach.
+**Updated Plan July 15, 2025** - Pivoted from AI Agent Development to a more structured career transition approach.
 
 ### Training Evolution
 - **Previous Focus**: AI agent development using Flowise and Python
@@ -14,9 +14,9 @@
 ## 📋 Current Training Plan
 
 ### Phase 1: Python Foundation & Data Manipulation (Days 1-14)
-- ✅ **Day 1-2**: Complete Codecademy 'Python for Programmers' (*Completed July 15, 2025*)
+- ✅ **Day 1-2**: Complete Codecademy 'Python for Programmers' 
 - ✅ **Day 3**: Environment Setup: Visual Studio Code with Python extension
-- 🔄 **Day 4**: Master Pandas for Data Manipulation - SQL to Python Translation (*Starting July 16, 2025*)
+- 🔄 **Day 4-8**: Master Pandas for Data Manipulation - SQL to Python Translation 
 
 ### Upcoming Phases
 - **Phase 2**: Advanced Python & ML Libraries
@@ -30,6 +30,7 @@
 ### Recent Completions
 - **July 15, 2025**: Completed Codecademy Python for Programmers course
 - **July 15, 2025**: Development environment setup (VS Code + Python extension)
+- **July 17, 2025**: Added Jupyter and Github Extension to VS Code
 
 ### Current Weekly Structure
 - **week-01-foundations**: Python fundamentals and environment setup (and Flowise per previous plan)
