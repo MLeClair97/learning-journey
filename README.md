@@ -16,7 +16,8 @@
 ### Phase 1: Python Foundation & Data Manipulation (Days 1-14)
 - ✅ **Day 1-2**: Complete Codecademy 'Python for Programmers' 
 - ✅ **Day 3**: Environment Setup: Visual Studio Code with Python extension
-- 🔄 **Day 4-8**: Master Pandas for Data Manipulation - SQL to Python Translation 
+- ✅ **Day 4-7**: Master Pandas for Data Manipulation - SQL to Python Translation
+- 🔄 **Day 8-10**: Database connections with Python
 
 ### Upcoming Phases
 - **Phase 2**: Advanced Python & ML Libraries
@@ -27,16 +28,7 @@
 
 ## 📊 Progress Tracking
 
-### Recent Completions
-- **July 15, 2025**: Completed Codecademy Python for Programmers course
-- **July 15, 2025**: Development environment setup (VS Code + Python extension)
-- **July 17, 2025**: Added Jupyter and Github Extension to VS Code
-
-### Current Weekly Structure
-- **week-01-foundations**: Python fundamentals and environment setup (and Flowise per previous plan)
-- **week-02-foundations**: Pandas and data manipulation focus
-
----
+Tracking progress in this log entry: PROGRESS_LOG.md
 
 ## 🗂️ Repository Structure
 
@@ -46,7 +38,7 @@ learning-journey/
 ├── PROGRESS_LOG.md           # Detailed daily learning log
 ├── week-01-foundations/      # Python fundamentals
 ├── week-02-foundations/      # Data manipulation with Pandas
-└── [future weeks]            # Upcoming training phases
+└── [future weeks]            # Additional training phases
 ```
 
 ---
@@ -67,7 +59,7 @@ learning-journey/
 ## 📚 Resources & Tools
 
 ### Current Learning Stack
-- **IDE**: Visual Studio Code with Python extension
+- **IDE**: Visual Studio Code with Python and Jupyter Notebook extensions
 - **Courses**: Codecademy Python for Programmers ✅
 - **Focus Areas**: Pandas, SQL-to-Python translation
 - **Documentation**: Detailed progress tracking in `PROGRESS_LOG.md`
@@ -85,16 +77,6 @@ Initially focused on AI agent development using Flowise and Python. This foundat
 - Workflow automation concepts
 
 ---
-
-## 📈 Next Steps
-
-1. **Immediate**: Begin Pandas/SQL translation work (Day 4)
-2. **This Week**: Complete Python foundation phase
-3. **Next Week**: Advanced data manipulation techniques
-4. **Month 1 Goal**: Solid Python and data manipulation proficiency
-
----
-
 ## 🤝 Connect & Follow
 
 - **GitHub**: (https://github.com/MLeClair97/learning-journey)
@@ -106,6 +88,7 @@ Initially focused on AI agent development using Flowise and Python. This foundat
 *Last Updated: July 15, 2025*
 *Next Review: Weekly*
 _________________________________________________________________
+#  ARCHIVE 
 # learning-journey
 # Tracking my journey of attempting to learn AI agent development - from Flowise to Python
 
