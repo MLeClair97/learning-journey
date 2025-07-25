@@ -18,6 +18,8 @@
 ### Month 1: Foundation + AI Tool Mastery
 
 #### Completed ✅
+- **Day 9**: PostgreSQL with SQLAlchemy - Local Database Mastery
+    - Detailed Notebook: week-03-connections/Day 9: PostgreSQL-with-SQLAlchemy.ipynb
 - **Day 8**: SQLite3 - Local Database Mastery
     - Detailed Notebook: week-03-connections/Day 8: SQLite3-Local-Database.ipynb
 - **Day 7**: Pandas Cleaning and Transforming Data
@@ -35,7 +37,7 @@
   - *Notes*: Solid foundation refresher, ready for data manipulation focus
 
 #### Upcoming 📅
-- **Day 9-10**: Database connections with Python
+- **Day 10**: Database connections with Python
 - **Day 11-14**: API calls and JSON handling
 - **Day 15-17**: Master AI tools interactively
 - **Day 18-21**: Prompt engineering mastery
@@ -49,6 +51,13 @@
 ---
 
 ## 📊 Daily Learning Log
+### July 24, 2025 - Day 9 Progress
+**Focus**: Database connections with Python
+- ✅ **Completed**: PostgreSQL with SQLAlchemy- Local Database Connection and querying
+- ✅ **Environment**: VS Code + Jupyter Notebook + Python + PostgreSQL + pgAdmin
+- ✅ **Progress**: Learned how to install and use postgreSQL, connected and combined SQL extraction with pandas manipulation
+- **Key Takeaways**: Struggled a but with the `.env` concept so this took two days for both query practice and securing the connection with `.env` and `gitignore`. Wrapping SQL queries in engine connection and execute functions was different but I was grateful for the pgAdmin so I had a semi-familiar interface to look at the sample data to see what I wanted to pull. I probably should have practiced looking at the data using python panda but old habits are slow to die.
+
 ### July 21, 2025 - Day 8 Progress
 **Focus**: Database connections with Python
 - ✅ **Completed**: SQLite3 - Local Database Connection and querying
@@ -104,15 +113,16 @@
 
 ## 🔄 Weekly Reflections
 
-### Week 1 (July 14-20, 2025)
+### Week 1 (July 14-18, 2025)
 **Theme**: Foundation Building
 - **Major Accomplishments**: 
   - Completed Python refresher
   - Environment fully configured
+  - Succcessful data interaction with increasingly complex handling
   - Successfully pivoted training approach
-- **Challenges Overcome**: [Add challenges]
-- **Key Learnings**: [Add insights]
-- **Next Week Focus**: [Add upcoming goals]
+- **Challenges Overcome**: I was sturggling with cold code writing and visualization of the data results. This lead me to Visual Studio Code and Jupyter Notebooks - game changers!  I found help with coding to speed up my progress and much better view of what is happening both in code and on my github notes.
+- **Key Learnings**: I am very comfortable with the dataframe concept and how to get data into a format that is useful.  Continued practice should make that smoother each week.
+- **Next Week Focus**: Database connections and continued data manipulation
 
 ---
 
@@ -148,5 +158,5 @@
 
 ---
 
-*Last Updated: July 20, 2025*
+*Last Updated: July 25, 2025*
 *Next Review: July 22, 2025*
