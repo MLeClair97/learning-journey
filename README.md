@@ -17,7 +17,8 @@
 - ✅ **Day 1-2**: Complete Codecademy 'Python for Programmers' 
 - ✅ **Day 3**: Environment Setup: Visual Studio Code with Python extension
 - ✅ **Day 4-7**: Master Pandas for Data Manipulation - SQL to Python Translation
-- 🔄 **Day 8-10**: Database connections with Python
+- ✅ **Day 8-10**: Database connections with Python
+- 🔄 **Day 11-14**: API calls and JSON handling
 
 ### Upcoming Phases
 - **Phase 2**: Advanced Python & ML Libraries
@@ -38,6 +39,8 @@ learning-journey/
 ├── PROGRESS_LOG.md           # Detailed daily learning log
 ├── week-01-foundations/      # Python fundamentals
 ├── week-02-foundations/      # Data manipulation with Pandas
+├── week-03-connections/      # Data connections with Pandas
+├── week-04-integrations/     # AI API Integrations
 └── [future weeks]            # Additional training phases
 ```
 
@@ -85,7 +88,7 @@ Initially focused on AI agent development using Flowise and Python. This foundat
 
 ---
 
-*Last Updated: July 21, 2025*
+*Last Updated: July 29, 2025*
 *Next Review: Weekly*
 _________________________________________________________________
 #  ARCHIVE 

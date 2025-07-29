@@ -19,7 +19,7 @@
 
 #### Completed ✅
 - **Day 11**: OpenAI API Fundamentals
-    - Detailed Notebook:week-04-AI-API-Integration/Day-11-OpenAI-API-Fundamentals.ipynb
+    - Detailed Notebook: week-04-integrations/Day_11_OpenAI-API-Fundamentals.ipynb
 - **Day 10**: SQL Server with SQLAlchemy - Local Database Mastery
     - Detailed Notebook: week-03-connections/Day_10_SQL-Server-with-SQlAlchemy.ipynb
 - **Day 9**: PostgreSQL with SQLAlchemy - Local Database Mastery
