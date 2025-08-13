@@ -5,6 +5,7 @@
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
   },
+  "forwardPorts": [8501, 8888],
   "postCreateCommand": "pip install -U pip && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi",
   "customizations": {
     "vscode": {
@@ -16,6 +17,7 @@
     }
   }
 }
+
 // This configuration sets up a development container for Python 3.11 with Git and VS Code extensions.
 // It installs the latest version of pip and any dependencies listed in requirements.txt after the container is created.
 // The container uses the official Python 3.11 image from Microsoft and includes features for Git support.
