@@ -1,12 +1,15 @@
-// .devcontainer/devcontainer.json
 {
-  "name": "Python 3.11",
+  "name": "Python 3.11 (Portfolio)",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
   },
+  "containerEnv": {
+    "PIP_DISABLE_PIP_VERSION_CHECK": "1"
+  },
   "forwardPorts": [8501, 8888],
-  "postCreateCommand": "pip install -U pip && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi",
+  "postCreateCommand": "python -m pip install -U pip && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi && mkdir -p data",
+  "postStartCommand": "[ -f create_db.py ] && python create_db.py || true",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -17,8 +20,3 @@
     }
   }
 }
-
-// This configuration sets up a development container for Python 3.11 with Git and VS Code extensions.
-// It installs the latest version of pip and any dependencies listed in requirements.txt after the container is created.
-// The container uses the official Python 3.11 image from Microsoft and includes features for Git support.
-// The VS Code extensions included are for Python development, Jupyter notebooks, and Docker support.
