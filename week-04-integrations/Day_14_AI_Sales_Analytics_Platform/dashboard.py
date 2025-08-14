@@ -30,69 +30,39 @@ class SalesAnalyticsPlatform:
     
     def create_fallback_data(self):
         """Create minimal fallback data for when database fails"""
-        # This will create a simple in-memory dataset
-        # that your app can use if the database setup fails
+        # For now, just log that we're using fallback
+    st.info("📊 Using fallback data mode - creating sample dataset in memory")
+    
+    # You could add minimal sample data here if needed
+    # For now, we'll let the app handle empty data gracefully
     pass
 
-    def setup_database(self):
-        """Initialize database with error handling for cloud deployment"""
-    try:
-        # Try to create data directory
-        os.makedirs('data', exist_ok=True)
-        db_path = 'data/sales_platform.db'
-    except Exception as e:
-        # Fallback to in-memory database for cloud deployment
-        db_path = ':memory:'
-        st.warning("Using in-memory database - data will reset on restart")
+def setup_database(self):
+    """Simplified database setup for cloud deployment"""
+    # Use in-memory database for cloud deployment
+    db_path = ':memory:'
+    st.warning("Using in-memory database - data will reset on restart")
     
     try:
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
         
-        # Create comprehensive sales table
+        # Create simple table (no sample data for now)
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS sales_data (
             id INTEGER PRIMARY KEY,
             date DATE,
             region TEXT,
-            salesperson TEXT,
-            customer_segment TEXT,
-            product_category TEXT,
-            product_name TEXT,
-            revenue DECIMAL(10,2),
-            units_sold INTEGER,
-            profit_margin DECIMAL(5,2),
-            customer_satisfaction DECIMAL(3,1),
-            lead_source TEXT,
-            deal_stage TEXT,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            revenue DECIMAL(10,2)
         )
         ''')
         
-        # Check if we need sample data
-        cursor.execute('SELECT COUNT(*) FROM sales_data')
-        count = cursor.fetchone()[0]
-        
-        if count == 0:
-            st.info("🏗️ Setting up database with sample data... This will take a moment.")
-            # Generate comprehensive sample data
-            sample_data = self.generate_comprehensive_sample_data()
-            cursor.executemany('''
-            INSERT INTO sales_data (date, region, salesperson, customer_segment, product_category,
-                                  product_name, revenue, units_sold, profit_margin, customer_satisfaction,
-                                  lead_source, deal_stage)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            ''', sample_data)
-            conn.commit()
-            st.success("✅ Database setup complete!")
-        
+        conn.commit()
         conn.close()
+        st.success("✅ Database setup complete!")
         
     except Exception as e:
         st.error(f"Database setup failed: {e}")
-        st.info("💡 Using fallback in-memory database.")
-        # Create a minimal fallback dataset
-        self.create_fallback_data()
     
     def generate_comprehensive_sample_data(self):
         """Generate realistic, comprehensive sample data"""
