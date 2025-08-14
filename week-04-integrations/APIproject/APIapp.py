@@ -7,7 +7,6 @@
 # ├── database_connector.py
 # └── your_ai_analyst.py
 # └── api.py
-# └── requirements.txt
 # └── README.md
 
 from flask import Flask, request, jsonify

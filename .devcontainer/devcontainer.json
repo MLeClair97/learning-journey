@@ -8,7 +8,7 @@
     "PIP_DISABLE_PIP_VERSION_CHECK": "1"
   },
   "forwardPorts": [8501, 8888],
-  "postCreateCommand": "python -m pip install -U pip && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi && mkdir -p data",
+  "postCreateCommand": "python -m pip install -U pip && if [ -f week-04-integrations/Day_14_AI_Sales_Analytics_Platform/requirements.txt ]; then pip install -r week-04-integrations/Day_14_AI_Sales_Analytics_Platform/requirements.txt; fi && mkdir -p data",
   "postStartCommand": "[ -f create_db.py ] && python create_db.py || true",
   "customizations": {
     "vscode": {
