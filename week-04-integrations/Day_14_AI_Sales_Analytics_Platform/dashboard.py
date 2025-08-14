@@ -34,22 +34,49 @@ class SalesAnalyticsPlatform:
         self.setup_database()
     
     def create_fallback_data(self):
-        """Create minimal fallback data for when database fails"""
-        # For now, just log that we're using fallback
-    # st.info("📊 Using fallback data mode - creating sample dataset in memory") # Debug message
-    
-    # You could add minimal sample data here if needed
-    # For now, we'll let the app handle empty data gracefully
-    pass
+        """Create minimal fallback data for when database seeding fails"""
+        # Seed a very small dataset so the app can run even without sample data
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        fallback_rows = [
+            (
+                datetime.now().date().isoformat(),
+                "North America",
+                "Fallback User",
+                "Small Business",
+                "Software Licenses",
+                "Starter Package",
+                1000.0,
+                1,
+                25.0,
+                4.0,
+                "Fallback",
+                "Closed Won",
+            )
+        ]
+        cursor.executemany(
+            """
+            INSERT INTO sales_data (
+                date, region, salesperson, customer_segment, product_category,
+                product_name, revenue, units_sold, profit_margin, customer_satisfaction,
+                lead_source, deal_stage
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            fallback_rows,
+        )
+        conn.commit()
+        conn.close()
 
     def setup_database(self):
         """Simplified database setup for cloud deployment"""
+        conn = None
         try:
             conn = sqlite3.connect(self.db_path)
             cursor = conn.cursor()
 
             # Create comprehensive sales table
-            cursor.execute('''
+            cursor.execute(
+                """
             CREATE TABLE IF NOT EXISTS sales_data (
                 id INTEGER PRIMARY KEY,
                 date DATE,
@@ -65,26 +92,36 @@ class SalesAnalyticsPlatform:
                 lead_source TEXT,
                 deal_stage TEXT
             )
-            ''')
+                """
+            )
 
             # Seed database with sample data if empty
-            cursor.execute('SELECT COUNT(*) FROM sales_data')
+            cursor.execute("SELECT COUNT(*) FROM sales_data")
             if cursor.fetchone()[0] == 0:
                 sample_data = self.generate_comprehensive_sample_data()
-                cursor.executemany('''
+                cursor.executemany(
+                    """
                 INSERT INTO sales_data (
                     date, region, salesperson, customer_segment, product_category,
                     product_name, revenue, units_sold, profit_margin, customer_satisfaction,
                     lead_source, deal_stage
                 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                ''', sample_data)
+                    """,
+                    sample_data,
+                )
+                conn.commit()
 
-            conn.commit()
-            conn.close()
-            # st.success("✅ Database setup complete!") # Debug message
+            # If seeding didn't populate data, create minimal fallback
+            cursor.execute("SELECT COUNT(*) FROM sales_data")
+            if cursor.fetchone()[0] == 0:
+                raise RuntimeError("No data available after seeding")
 
         except Exception as e:
             st.error(f"Database setup failed: {e}")
+            self.create_fallback_data()
+        finally:
+            if conn:
+                conn.close()
     
     def generate_comprehensive_sample_data(self):
         """Generate realistic, comprehensive sample data"""
