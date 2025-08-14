@@ -323,21 +323,27 @@ Structure your response with clear headings and specific recommendations.
             )
         st.write(strategic_insights)
 
+
 def main():
+    """Main application with authentication and full features"""
+    
+    # Check if running from correct directory
+    if not os.path.exists('dashboard.py'):
+        st.error("⚠️ Please run this application from the project directory containing dashboard.py")
+        st.stop()
+    
+    st.title("🚀 AI-Enhanced Sales Analytics Platform")
+    st.markdown("**Professional AI-powered sales analytics for data-driven decision making**")
+    st.markdown("---")
+    
+    # Initialize platform
     try:
-        # Debug info
-        st.write("Debug: Starting application...")
-        st.write(f"Debug: Current directory: {os.getcwd()}")
-        st.write(f"Debug: OpenAI key present: {'Yes' if os.getenv('OPENAI_API_KEY') else 'No'}")
-        
-        # Rest of your code...
+        platform = SalesAnalyticsPlatform()
     except Exception as e:
         st.error(f"Application startup failed: {e}")
         import traceback
         st.code(traceback.format_exc())
-    
-    # Initialize platform
-    platform = SalesAnalyticsPlatform()
+        st.stop()
     
     # Sidebar controls
     st.sidebar.header("📊 Analytics Controls")
@@ -353,29 +359,33 @@ def main():
     # Load data for filter options
     all_data = platform.load_sales_data()
     
+    if len(all_data) == 0:
+        st.error("No data available. Please check database setup.")
+        st.stop()
+    
     # Dynamic filters
     with st.sidebar.expander("🎯 Advanced Filters", expanded=True):
         regions = st.multiselect(
             "Regions",
-            options=sorted(all_data['region'].unique()),
+            options=sorted(all_data['region'].unique()) if 'region' in all_data.columns else [],
             default=[]
         )
         
         salespeople = st.multiselect(
             "Sales Team",
-            options=sorted(all_data['salesperson'].unique()),
+            options=sorted(all_data['salesperson'].unique()) if 'salesperson' in all_data.columns else [],
             default=[]
         )
         
         segments = st.multiselect(
             "Customer Segments",
-            options=sorted(all_data['customer_segment'].unique()),
+            options=sorted(all_data['customer_segment'].unique()) if 'customer_segment' in all_data.columns else [],
             default=[]
         )
         
         categories = st.multiselect(
             "Product Categories",
-            options=sorted(all_data['product_category'].unique()),
+            options=sorted(all_data['product_category'].unique()) if 'product_category' in all_data.columns else [],
             default=[]
         )
     
@@ -400,7 +410,7 @@ def main():
     # Data summary
     if len(filtered_data) > 0:
         st.sidebar.success(f"📈 {len(filtered_data):,} records loaded")
-        st.sidebar.metric("Total Revenue", f"${filtered_data['revenue'].sum():,.0f}")
+        st.sidebar.metric("Total Revenue", f"${filtered_data['revenue'].sum():,.0f}" if 'revenue' in filtered_data.columns else "N/A")
     else:
         st.sidebar.warning("No data matches current filters")
     
@@ -424,7 +434,7 @@ def main():
             health_metrics = {
                 'status': 'healthy',
                 'uptime': '99.9%',
-                'api_calls': random.randint(100, 1000),
+                'data_records': len(all_data),
                 'timestamp': datetime.now().isoformat()
             }
             st.json(health_metrics)
