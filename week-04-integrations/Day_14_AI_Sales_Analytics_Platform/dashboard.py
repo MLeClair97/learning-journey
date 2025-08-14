@@ -29,8 +29,18 @@ class SalesAnalyticsPlatform:
         self.setup_database()
     
     def setup_database(self):
-        """Initialize database with comprehensive sample data"""
-        conn = sqlite3.connect('data/sales_platform.db')
+        """Initialize database with error handling for cloud deployment"""
+    try:
+        # Try to create data directory
+        os.makedirs('data', exist_ok=True)
+        db_path = 'data/sales_platform.db'
+    except Exception as e:
+        # Fallback to in-memory database for cloud deployment
+        db_path = ':memory:'
+        st.warning("Using in-memory database - data will reset on restart")
+    
+    try:
+        conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
         
         # Create comprehensive sales table
@@ -58,6 +68,7 @@ class SalesAnalyticsPlatform:
         count = cursor.fetchone()[0]
         
         if count == 0:
+            st.info("🏗️ Setting up database with sample data... This will take a moment.")
             # Generate comprehensive sample data
             sample_data = self.generate_comprehensive_sample_data()
             cursor.executemany('''
@@ -67,8 +78,15 @@ class SalesAnalyticsPlatform:
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', sample_data)
             conn.commit()
+            st.success("✅ Database setup complete!")
         
         conn.close()
+        
+    except Exception as e:
+        st.error(f"Database setup failed: {e}")
+        st.info("💡 Using fallback in-memory database.")
+        # Create a minimal fallback dataset
+        self.create_fallback_data()
     
     def generate_comprehensive_sample_data(self):
         """Generate realistic, comprehensive sample data"""
