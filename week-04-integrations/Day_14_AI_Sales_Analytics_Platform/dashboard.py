@@ -31,7 +31,7 @@ class SalesAnalyticsPlatform:
     def create_fallback_data(self):
         """Create minimal fallback data for when database fails"""
         # For now, just log that we're using fallback
-    st.info("📊 Using fallback data mode - creating sample dataset in memory")
+    # st.info("📊 Using fallback data mode - creating sample dataset in memory") # Debug message
     
     # You could add minimal sample data here if needed
     # For now, we'll let the app handle empty data gracefully
@@ -41,7 +41,7 @@ class SalesAnalyticsPlatform:
         """Simplified database setup for cloud deployment"""
     # Use in-memory database for cloud deployment
     db_path = ':memory:'
-    st.warning("Using in-memory database - data will reset on restart")
+    # st.warning("Using in-memory database - data will reset on restart") # Debug message
     
     try:
         conn = sqlite3.connect(db_path)
@@ -59,7 +59,7 @@ class SalesAnalyticsPlatform:
         
         conn.commit()
         conn.close()
-        st.success("✅ Database setup complete!")
+        # st.success("✅ Database setup complete!") # Debug message
         
     except Exception as e:
         st.error(f"Database setup failed: {e}")
