@@ -37,8 +37,8 @@ class SalesAnalyticsPlatform:
     # For now, we'll let the app handle empty data gracefully
     pass
 
-def setup_database(self):
-    """Simplified database setup for cloud deployment"""
+    def setup_database(self):
+        """Simplified database setup for cloud deployment"""
     # Use in-memory database for cloud deployment
     db_path = ':memory:'
     st.warning("Using in-memory database - data will reset on restart")
