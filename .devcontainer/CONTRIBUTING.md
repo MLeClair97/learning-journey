@@ -63,6 +63,6 @@ Refs: <issue/PR>
 
 - This project uses a **Dev Container** for consistency.
 
-All dependencies should be listed in `requirements.txt`.
+All dependencies should be listed in `week-04-integrations/Day_14_AI_Sales_Analytics_Platform/requirements.txt`.
 
 Keep `.env` variables minimal and documented.

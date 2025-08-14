@@ -28,9 +28,7 @@
 - Interactive exploration of data
 
 ## Deployment Notes
-- Keep `requirements.txt` in this folder and at the repository root in sync.
 - Dependencies are specified with version ranges to ensure Streamlit Cloud can
-  resolve compatible packages. If deployment fails with a non-zero exit code,
-  verify that the root `requirements.txt` matches this file and reinstall
-  packages using `pip install -r requirements.txt`.
+  resolve compatible packages.
+- Install packages using `pip install -r requirements.txt` from this directory.
 
