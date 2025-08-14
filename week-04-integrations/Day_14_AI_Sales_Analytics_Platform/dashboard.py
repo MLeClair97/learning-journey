@@ -48,15 +48,36 @@ class SalesAnalyticsPlatform:
             conn = sqlite3.connect(self.db_path)
             cursor = conn.cursor()
 
-            # Create simple table (no sample data for now)
+            # Create comprehensive sales table
             cursor.execute('''
             CREATE TABLE IF NOT EXISTS sales_data (
                 id INTEGER PRIMARY KEY,
                 date DATE,
                 region TEXT,
-                revenue DECIMAL(10,2)
+                salesperson TEXT,
+                customer_segment TEXT,
+                product_category TEXT,
+                product_name TEXT,
+                revenue DECIMAL(10,2),
+                units_sold INTEGER,
+                profit_margin DECIMAL(5,2),
+                customer_satisfaction DECIMAL(3,1),
+                lead_source TEXT,
+                deal_stage TEXT
             )
             ''')
+
+            # Seed database with sample data if empty
+            cursor.execute('SELECT COUNT(*) FROM sales_data')
+            if cursor.fetchone()[0] == 0:
+                sample_data = self.generate_comprehensive_sample_data()
+                cursor.executemany('''
+                INSERT INTO sales_data (
+                    date, region, salesperson, customer_segment, product_category,
+                    product_name, revenue, units_sold, profit_margin, customer_satisfaction,
+                    lead_source, deal_stage
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ''', sample_data)
 
             conn.commit()
             conn.close()
@@ -109,10 +130,10 @@ class SalesAnalyticsPlatform:
             elif record_date.month in [1, 2]:  # Q1 dip
                 revenue *= random.uniform(0.8, 1.0)
             
-            units = random.randint(1, 20)
+            units_sold = random.randint(1, 20)
             profit_margin = random.uniform(15, 45)  # 15-45% profit margin
             satisfaction = random.uniform(3.5, 5.0)  # Customer satisfaction 3.5-5.0
-            
+
             record = (
                 record_date.isoformat(),
                 region,
@@ -121,7 +142,7 @@ class SalesAnalyticsPlatform:
                 category,
                 product,
                 round(revenue, 2),
-                units,
+                units_sold,
                 round(profit_margin, 1),
                 round(satisfaction, 1),
                 random.choice(lead_sources),
