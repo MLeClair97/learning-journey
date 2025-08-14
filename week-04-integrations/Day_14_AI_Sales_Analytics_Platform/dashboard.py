@@ -28,6 +28,12 @@ class SalesAnalyticsPlatform:
         self.client = OpenAI(api_key=api_key) if api_key else None
         self.setup_database()
     
+    def create_fallback_data(self):
+        """Create minimal fallback data for when database fails"""
+        # This will create a simple in-memory dataset
+        # that your app can use if the database setup fails
+    pass
+
     def setup_database(self):
         """Initialize database with error handling for cloud deployment"""
     try:
@@ -348,10 +354,17 @@ Structure your response with clear headings and specific recommendations.
         st.write(strategic_insights)
 
 def main():
-    """Main application with authentication and full features"""
-    st.title("🚀 AI-Enhanced Sales Analytics Platform")
-    st.markdown("**Professional AI-powered sales analytics for data-driven decision making**")
-    st.markdown("---")
+    try:
+        # Debug info
+        st.write("Debug: Starting application...")
+        st.write(f"Debug: Current directory: {os.getcwd()}")
+        st.write(f"Debug: OpenAI key present: {'Yes' if os.getenv('OPENAI_API_KEY') else 'No'}")
+        
+        # Rest of your code...
+    except Exception as e:
+        st.error(f"Application startup failed: {e}")
+        import traceback
+        st.code(traceback.format_exc())
     
     # Initialize platform
     platform = SalesAnalyticsPlatform()
