@@ -26,3 +26,11 @@
 - 75% reduction in report generation time
 - Real-time insights for decision making
 - Interactive exploration of data
+
+## Deployment Notes
+- Keep `requirements.txt` in this folder and at the repository root in sync.
+- Dependencies are specified with version ranges to ensure Streamlit Cloud can
+  resolve compatible packages. If deployment fails with a non-zero exit code,
+  verify that the root `requirements.txt` matches this file and reinstall
+  packages using `pip install -r requirements.txt`.
+
