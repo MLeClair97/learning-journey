@@ -26,6 +26,11 @@ class SalesAnalyticsPlatform:
         # Initialize OpenAI client if API key is available
         api_key = os.getenv("OPENAI_API_KEY")
         self.client = OpenAI(api_key=api_key) if api_key else None
+
+        # Ensure data directory exists and establish database path
+        self.db_path = os.path.join("data", "sales_platform.db")
+        os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
+
         self.setup_database()
     
     def create_fallback_data(self):
@@ -39,30 +44,26 @@ class SalesAnalyticsPlatform:
 
     def setup_database(self):
         """Simplified database setup for cloud deployment"""
-    # Use in-memory database for cloud deployment
-    db_path = ':memory:'
-    # st.warning("Using in-memory database - data will reset on restart") # Debug message
-    
-    try:
-        conn = sqlite3.connect(db_path)
-        cursor = conn.cursor()
-        
-        # Create simple table (no sample data for now)
-        cursor.execute('''
-        CREATE TABLE IF NOT EXISTS sales_data (
-            id INTEGER PRIMARY KEY,
-            date DATE,
-            region TEXT,
-            revenue DECIMAL(10,2)
-        )
-        ''')
-        
-        conn.commit()
-        conn.close()
-        # st.success("✅ Database setup complete!") # Debug message
-        
-    except Exception as e:
-        st.error(f"Database setup failed: {e}")
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+
+            # Create simple table (no sample data for now)
+            cursor.execute('''
+            CREATE TABLE IF NOT EXISTS sales_data (
+                id INTEGER PRIMARY KEY,
+                date DATE,
+                region TEXT,
+                revenue DECIMAL(10,2)
+            )
+            ''')
+
+            conn.commit()
+            conn.close()
+            # st.success("✅ Database setup complete!") # Debug message
+
+        except Exception as e:
+            st.error(f"Database setup failed: {e}")
     
     def generate_comprehensive_sample_data(self):
         """Generate realistic, comprehensive sample data"""
@@ -133,7 +134,7 @@ class SalesAnalyticsPlatform:
     @st.cache_data
     def load_sales_data(_self, date_range=None, filters=None):
         """Load sales data with comprehensive filtering"""
-        conn = sqlite3.connect('data/sales_platform.db')
+        conn = sqlite3.connect(_self.db_path)
         query = "SELECT * FROM sales_data WHERE 1=1"
         params = []
         
