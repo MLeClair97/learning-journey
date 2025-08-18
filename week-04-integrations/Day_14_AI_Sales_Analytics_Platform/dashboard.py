@@ -10,8 +10,7 @@ import os
 import random
 import time
 from typing import Optional
-from pathlib import Path
-import os
+
 
 # Page configuration
 st.set_page_config(
@@ -390,8 +389,7 @@ def main():
     
     # Check if running from correct directory
 def main():
-    os.chdir(Path(__file__).resolve().parent)  # ensure working directory
-    
+        
     st.title("🚀 AI-Enhanced Sales Analytics Platform")
     st.markdown("**Professional AI-powered sales analytics for data-driven decision making**")
     st.markdown("---")
