@@ -5,8 +5,8 @@
 
 **Solution**: An AI-enhanced sales analytics platform that transforms raw sales data into intelligent business insights. The platform combines traditional data visualization with OpenAI's GPT models to provide natural language analysis, trend identification, and strategic recommendations that would normally require a team of data analysts.
 
-## Live Demo
-- **Streamlit App**: [\[Live URL\]]
+## 🚀 Live Demo
+- **Streamlit App**: [https://ai-sales-analytics.streamlit.app](https://ai-sales-analytics.streamlit.app)
 - **Docker Container**: `docker run -p 8501:8501 ai-sales-analytics`
 
 ## Screenshots
